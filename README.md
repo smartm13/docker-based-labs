@@ -18,12 +18,12 @@ Distribute/Hand-out independent virtual envs to different users out of a single 
  4. Clone this repo
  5. [Optional] Change Dockerfile as per needs of base image  
     These would be the things that the env will come pre-built with.
- 6. Run `./install_all.sh`
-    I have used LDAP based mechanism to authicate my users, you can change that in last line (docker run env vars) of install.sh
+ 6. Run `./install_all.sh`  
+    I have used LDAP based mechanism to authicate my users, you can change that in last line (docker run env vars) of install.sh  
     Refer [this](https://github.com/maxivak/docker-ssh#quick-start) or[this](https://github.com/jeroenpeeters/docker-ssh#user-authentication) for details.
  7. Now you should see each users container created (`docker ps`) and one additional for SSH.
- 8. Each user may now login to thier env with ssh: `ssh john@host`
-    Change `john` with that user's name, Change `host` to your host VM fqdn/ip.
+ 8. Each user may now login to thier env with ssh: `ssh john@host`  
+    Change `john` with that user's name, Change `host` to your host VM fqdn/ip.  
  9. Feel free to access SSH over Browser at `http://host:8022`
 ### Credits:
 This is adapted from [Docker-SSH](https://github.com/jeroenpeeters/docker-ssh) and [fork](https://github.com/maxivak/docker-ssh).
